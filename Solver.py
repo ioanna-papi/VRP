@@ -72,6 +72,8 @@ class TwoOptMove(object):
         self.positionOfFirstNode = None
         self.positionOfSecondNode = None
         self.moveCost = 10 ** 9
+        
+# Nearest Neighbor Method
 
 class Solver:
     def __init__(self, m):
@@ -184,10 +186,9 @@ class Solver:
             print('FeasibilityIssue')
           
         SolDrawer.draw('Solution_Nearest_Neighbor', self.sol, self.allNodes)
-          
-                     
+                             
 
-# Local search
+# Local Search
 
     def cloneRoute(self, rt: Route, i):
         if i < 15:
@@ -322,7 +323,8 @@ class Solver:
         return count
         
     
-# VND
+# VND Algorithm
+
     def FindBestSwapMove(self, sm):
         for firstRouteIndex in range(0, len(self.sol.routes)):
             rt1: Route = self.sol.routes[firstRouteIndex]
