@@ -14,6 +14,7 @@ class Model:
         random.seed(birthday)
         depot = Node(0, 0, 0, 50, 50)
         self.allNodes.append(depot)
+        random.seed(1)
         for i in range(0, 100):
             id = i + 1
             dem = random.randint(1, 5) * 100
