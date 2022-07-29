@@ -318,10 +318,9 @@ class Solver:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
         for rt in self.sol.routes:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
-        #print("Termination after ", count, "loops.")
-        return count
-    
         SolDrawer.draw('Solution_Local_search', self.sol, self.allNodes)
+        return count
+        
     
 # VND
     def FindBestSwapMove(self, sm):
