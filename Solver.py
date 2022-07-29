@@ -313,8 +313,9 @@ class Solver:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
         for rt in self.sol.routes:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
-        print("Termination after ", count, "loops.")
-
+        #print("Termination after ", count, "loops.")
+        return count
+    
 # VND
     def FindBestSwapMove(self, sm):
         for firstRouteIndex in range(0, len(self.sol.routes)):
