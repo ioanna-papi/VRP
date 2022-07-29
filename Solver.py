@@ -189,8 +189,8 @@ class Solver:
             rt: Route = self.sol.routes[i]
             f.write("This is route: \n")
             for j in range(len(rt.sequenceOfNodes)):
-                print(rt.sequenceOfNodes[j].ID, end=' ', )
-                f.write("%d\n" % (rt.sequenceOfNodes[j].ID))
+                print(rt.sequenceOfNodes[j].id, end=' ', )
+                f.write("%d\n" % (rt.sequenceOfNodes[j].id))
             f.write("\n")
             print("\n")
         solution = self.objective(self.sol)
