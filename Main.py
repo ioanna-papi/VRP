@@ -1,24 +1,22 @@
 from VRP_Model import *
 from Solver import *
 
-#1st question
+# 1st question
 m1 = Model()
 m1.BuildModel()
 
-#3rd question
+# 2nd and 3rd question
 print()
 print("Solution with Nearest Neighbor Method:")
 print()
 s1 = Solver(m1)
 sol = s1.solve()
-
-#2nd question
 dist = s1.CalculateDistance(s1.sol)
 print("Total distance with Nearest Neighbor Method:", dist)
 print()
 print()
 
-#4th question
+# 4th question
 print("Solution after Local Search:")
 print()
 loops = s1.LocalSearch()
@@ -30,7 +28,7 @@ print ("Termination after", loops, "loops.")
 print()
 print()
 
-#5th question
+# 5th question
 print("Solution with VND Algorithm:")
 print()
 s1.VND()
