@@ -125,7 +125,7 @@ class Solver:
         insCustomer.isRouted = True
 
     def ReportSolution(self, sol):
-        print(self.sol.dist)
+        #print(self.sol.dist)
         for i in range(0, len(sol.routes)):
             rt = sol.routes[i]
             for j in range(0, len(rt.sequenceOfNodes)):
