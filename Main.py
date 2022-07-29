@@ -17,6 +17,7 @@ print()
 dist = s1.CalculateDistance(s1.sol)
 print("Total distance with Nearest Neighbor Method: ", dist)
 print()
+print()
 
 #4th question
 print("Solution after Local Search:")
@@ -26,8 +27,8 @@ s1.ReportSolution(s1.sol)
 dist = s1.CalculateDistance(s1.sol)
 print()
 print("Total distance after Local Search: ", dist)
-print()
 print("Total routes after Local Search: ", len(s1.sol.routes))
+print()
 print()
 
 #5th question
