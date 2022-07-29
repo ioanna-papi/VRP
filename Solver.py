@@ -184,20 +184,9 @@ class Solver:
             print('FeasibilityIssue')
           
         
-        f = open("NearestNeighbor8180099.txt", "w+")
-        for i in range(len(self.sol.routes)):
-            rt: Route = self.sol.routes[i]
-            f.write("This is route: \n")
-            for j in range(len(rt.sequenceOfNodes)):
-                print(rt.sequenceOfNodes[j].id, end=' ', )
-                f.write("%d\n" % (rt.sequenceOfNodes[j].id))
-            f.write("\n")
-            print("\n")
-        solution = self.ReportSolution(self.sol)
-        f.write("This is the final objective: %d" % (solution))
-        f.close()
+    
         SolDrawer.draw('final_Nearest8180099', self.sol, self.allNodes)
-        return (self.sol)    
+          
                      
 
 # Local search
