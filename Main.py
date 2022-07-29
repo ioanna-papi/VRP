@@ -10,7 +10,7 @@ print()
 print("Solution with Nearest Neighbor Method:")
 print()
 s1 = Solver(m1)
-#sol = s1.solve()
+sol = s1.solve()
 print()
 
 #2nd question
