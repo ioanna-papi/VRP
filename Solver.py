@@ -193,7 +193,7 @@ class Solver:
                 f.write("%d\n" % (rt.sequenceOfNodes[j].id))
             f.write("\n")
             print("\n")
-        solution = self.objective(self.sol)
+        solution = self.ReportSolution(self.sol)
         f.write("This is the final objective: %d" % (solution))
         f.close()
         SolDrawer.draw('final_Nearest8180099', self.sol, self.allNodes)
