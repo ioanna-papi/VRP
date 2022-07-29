@@ -1,5 +1,5 @@
 from VRP_Model import *
-from SolDrawer import *
+from Solution_Drawer import *
 
 class Solution:
     def __init__(self):
@@ -318,7 +318,7 @@ class Solver:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
         for rt in self.sol.routes:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
-        SolDrawer.draw('Solution_Local_search', self.sol, self.allNodes)
+        SolDrawer.draw('Solution_Local_Search', self.sol, self.allNodes)
         return count
         
     
