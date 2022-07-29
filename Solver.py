@@ -183,9 +183,7 @@ class Solver:
         if (modelIsFeasible == False):
             print('FeasibilityIssue')
           
-        
-    
-        SolDrawer.draw('final_Nearest8180099', self.sol, self.allNodes)
+        SolDrawer.draw('Solution_Nearest_Neighbor', self.sol, self.allNodes)
           
                      
 
@@ -322,6 +320,8 @@ class Solver:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
         #print("Termination after ", count, "loops.")
         return count
+    
+        SolDrawer.draw('Solution_Local_search', self.sol, self.allNodes)
     
 # VND
     def FindBestSwapMove(self, sm):
@@ -562,3 +562,7 @@ class Solver:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
         for rt in self.sol.routes:
             rt.sequenceOfNodes = rt.sequenceOfNodes[:-1]
+            
+        SolDrawer.draw('Solution_VND', self.sol, self.allNodes)
+        
+        
