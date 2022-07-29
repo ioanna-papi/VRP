@@ -1,4 +1,5 @@
 from VRP_Model import *
+from SolDrawer import *
 
 class Solution:
     def __init__(self):
