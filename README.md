@@ -10,9 +10,13 @@ Each route starts from the central warehouse and visits the various customers. T
 Each order must be satisfied by one and only one visit of a vehicle. Therefore, when a vehicle visits a customer, it carries to him all the products of his order.
 Each vehicle has a specific product capacity, so the goods carried by the vehicle must not exceed the maximum capacity it.
 Assume that the vehicles travel at 35 km/hr and that for each customer, the time to unload the goods is 15 minutes.
+
 The following vehicles are available in the warehouse:
+
 a) 15 trucks with a maximum capacity of 1500 kg
+
 b) 15 trucks with a maximum capacity of 1200 kg
+
 Each route has a total time limit of 3.5 ℎ𝑟.
 The goal is that the routes generated minimize the total distance traveled by the trucks.
 
