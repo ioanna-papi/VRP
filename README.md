@@ -6,7 +6,7 @@ The capacitated vehicle routing problem (CVRP or simply VRP) is one of the most 
 Consider a central warehouse (Node with id: 0) and a set of 𝑛 = 100 customers (Nodes with id: 1,…, 𝑛 = 100).
 Vehicles are based in the central warehouse.
 The aim is to build a route for each of the vehicles in order to serve the customers.<br/>
-Each route starts from the central warehouse and visits the various customers. The route ends at the last customer visiting the vehicle.
+Each route starts from the central warehouse and visits the various customers. The route ends at the last customer visiting the vehicle.<br/>
 Each order must be satisfied by one and only one visit of a vehicle. Therefore, when a vehicle visits a customer, it carries to him all the products of his order.<br/>
 Each vehicle has a specific product capacity, so the goods carried by the vehicle must not exceed the maximum capacity it.<br/>
 Assume that the vehicles travel at 35 km/hr and that for each customer, the time to unload the goods is 15 minutes.<br/>
